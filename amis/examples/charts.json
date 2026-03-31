@@ -1,0 +1,41 @@
+{
+  "examples": [
+    {
+      "name": "销售仪表盘",
+      "description": "完整的销售数据看板",
+      "charts": [
+        {
+          "type": "line",
+          "title": "月度销售额趋势",
+          "data": "monthly_sales"
+        },
+        {
+          "type": "pie", 
+          "title": "产品分类占比",
+          "data": "product_category"
+        },
+        {
+          "type": "bar",
+          "title": "区域销售排名",
+          "data": "region_sales"
+        }
+      ]
+    },
+    {
+      "name": "用户增长",
+      "description": "用户数据分析",
+      "charts": [
+        {
+          "type": "line",
+          "title": "日活跃用户",
+          "data": "dau"
+        },
+        {
+          "type": "scatter",
+          "title": "用户留存",
+          "data": "retention"
+        }
+      ]
+    }
+  ]
+}
