@@ -1,0 +1,15 @@
+{
+  "source": "company-db",
+  "connection": {
+    "host": "${DB_HOST}",
+    "port": "${DB_PORT}",
+    "database": "${DB_NAME}",
+    "user": "${DB_USER}",
+    "password": "${DB_PASSWORD}"
+  },
+  "queries": {
+    "sales": "SELECT DATE_FORMAT(date, '%Y-%m') as month, SUM(amount) as total FROM sales GROUP BY month",
+    "users": "SELECT DATE_FORMAT(created_at, '%Y-%m') as month, COUNT(*) as total FROM users GROUP BY month",
+    "products": "SELECT category, SUM(amount) as total FROM sales GROUP BY category"
+  }
+}
